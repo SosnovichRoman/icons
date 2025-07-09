@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "build/esm",
+    "outDir": "./native",
     "module": "esnext",
     "target": "esnext", // Целевая версия js
     "lib": [
@@ -21,20 +21,19 @@
     "jsx": "react-native",
     "declaration": true,
     "declarationDir": "./native", // Папка, в которую попадают файлы декларации
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "bundler",
+    // "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
 
     "allowJs": true,
     "noEmit": true,
     "isolatedModules": true,
     "strict": true,
-    // "moduleResolution": "bundler", ??
     // "customConditions": ["react-native"], ??
     // "allowImportingTsExtensions": true, ??
     "allowArbitraryExtensions": true,
-    "resolveJsonModule": true,
-    "resolvePackageJsonImports": false,
+    // "resolveJsonModule": true,
+    // "resolvePackageJsonImports": false,
     "skipLibCheck": true,
     // Causes issues with package.json "exports"
     "forceConsistentCasingInFileNames": false
