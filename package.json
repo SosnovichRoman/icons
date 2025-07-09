@@ -2,6 +2,7 @@
   "name": "icons",
   "version": "1.0.0",
   "description": "Apteka.by icons kit",
+  "types": "./native.index.d.ts",
   "exports": {
     "native": {
       "types": "./native.index.d.ts",
