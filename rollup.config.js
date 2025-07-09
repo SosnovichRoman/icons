@@ -6,5 +6,7 @@ export default {
     file: "native/index.js",
     format: "esm",
   },
-  plugins: [typescript({ useTsconfigDeclarationDir: true })],
+  plugins: [typescript()],
 };
+
+//{ useTsconfigDeclarationDir: true }
