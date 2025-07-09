@@ -1,4 +1,13 @@
 {
+  "name": "icons",
+  "version": "1.0.0",
+  "description": "Apteka.by icons kit",
+  "exports": {
+    "native": {
+      "types": "./native.index.d.ts",
+      "default": "./native.index.js"
+    }
+  },
   "scripts": {
     "build": "rollup --config"
   },

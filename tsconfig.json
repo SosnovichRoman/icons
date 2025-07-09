@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "build/esm",
     "module": "esnext",
-    "target": "esnext",
+    "target": "esnext", // Целевая версия js
     "lib": [
       "es2019",
       "es2020.bigint",
@@ -20,7 +20,7 @@
     ],
     "jsx": "react-native",
     "declaration": true,
-    "declarationDir": "build/types",
+    "declarationDir": "./native", // Папка, в которую попадают файлы декларации
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
