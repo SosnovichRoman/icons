@@ -9,6 +9,13 @@
       "default": "./native/index.js"
     }
   },
+  "typesVersions": {
+    "*": {
+      "native": [
+        "./native/index.d.ts"
+      ]
+    }
+  },
   "scripts": {
     "build": "rollup --config"
   },
