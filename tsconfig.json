@@ -20,7 +20,7 @@
     ],
     "jsx": "react-native",
     "declaration": true,
-    "declarationDir": "./native", // Папка, в которую попадают файлы декларации
+    "declarationDir": "./native",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -39,5 +39,5 @@
     "forceConsistentCasingInFileNames": false
   },
   "include": ["src"],
-  "exclude": ["node_modules", "build"]
+  "exclude": ["node_modules"]
 }
