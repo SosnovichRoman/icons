@@ -7,7 +7,6 @@
     "./native": "./native/index.js",
     "./package.json": "./package.json"
   },
-  "type": "module",
   "scripts": {
     "build": "rollup --config"
   },
