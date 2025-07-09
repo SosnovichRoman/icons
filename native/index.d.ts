@@ -1,2 +1,3 @@
 declare const sayHello: (name: string) => string;
-export default sayHello;
+declare const sayBye: (name: string) => string;
+export { sayHello, sayBye };
