@@ -18,9 +18,9 @@
       "es2022.object",
       "es2022.string"
     ],
-    "jsx": "react-native",
+    "jsx": "react",
     "declaration": true,
-    "declarationDir": "./native",
+    "declarationDir": "./native/types",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -38,6 +38,14 @@
     // Causes issues with package.json "exports"
     "forceConsistentCasingInFileNames": false
   },
-  "include": ["src", "svgr.d.ts"], // svgr.d.ts необходим для того, чтобы typescript мог импортировать svg
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "native/**/*.ts",
+    "native/**/*.tsx",
+    "build/**/*.ts",
+    "build/**/*.tsx",
+    "svgr.d.ts" // svgr.d.ts необходим для того, чтобы typescript мог импортировать svg
+  ],
   "exclude": ["node_modules"]
 }

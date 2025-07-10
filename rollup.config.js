@@ -1,5 +1,4 @@
 import typescript from "@rollup/plugin-typescript";
-import svgr from "@svgr/rollup";
 
 export default {
   input: "build/native/index.ts",
@@ -8,13 +7,5 @@ export default {
     format: "esm",
     sourcemap: true,
   },
-  plugins: [
-    typescript(),
-    // svgr({
-    //   // native: true,
-    //   // typescript: true,
-    //   // exportType: "named",
-    //   // jsxRuntime: "automatic",
-    // }),
-  ],
+  plugins: [typescript()],
 };
