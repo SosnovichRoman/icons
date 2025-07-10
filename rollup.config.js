@@ -6,11 +6,10 @@ import svgr from "@svgr/rollup";
 export default {
   input: "src/index.ts",
   output: {
-    // file: "native/index.js",
-    dir: "native",
+    file: "native/index.js",
     format: "esm",
     sourcemap: true,
-    preserveModules: true,
+    // preserveModules: true,
     // external: ["react-native-svg", "react"],
   },
   plugins: [
