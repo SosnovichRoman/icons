@@ -5,4 +5,6 @@ const sayBye = (name: string) => {
   return `Hey ${name}, say bye to TypeScript.`;
 };
 
-export { sayBye, sayHello };
+import IconTrash from "./iconTrash/iconTrash.svg";
+
+export { sayBye, sayHello, IconTrash };
