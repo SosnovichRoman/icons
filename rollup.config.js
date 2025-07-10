@@ -18,6 +18,25 @@ export default {
     svgr({
       native: true,
       typescript: true,
+      svgo: true,
+      svgoConfig: {
+        plugins: [
+          {
+            name: "preset-default",
+            params: {
+              overrides: {
+                removeViewBox: false, // Не удаляет viewBox
+              },
+            },
+          },
+          {
+            name: "removeAttrs",
+            params: {
+              attrs: "xmlns", // Удаляет ненужный xmlns
+            },
+          },
+        ],
+      },
       // exportType: "named",
       // jsxRuntime: "automatic",
     }),
