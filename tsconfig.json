@@ -38,6 +38,6 @@
     // Causes issues with package.json "exports"
     "forceConsistentCasingInFileNames": false
   },
-  "include": ["src"],
+  "include": ["src", "svgr.d.ts"], // svgr.d.ts необходим для того, чтобы typescript мог импортировать svg
   "exclude": ["node_modules"]
 }

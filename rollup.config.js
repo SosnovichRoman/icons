@@ -1,4 +1,6 @@
 import typescript from "rollup-plugin-typescript2";
+import svgr from "@svgr/rollup";
+import url from "@rollup/plugin-url";
 
 export default {
   input: "src/index.ts",
@@ -6,5 +8,5 @@ export default {
     file: "native/index.js",
     format: "esm",
   },
-  plugins: [typescript()],
+  plugins: [typescript(), svgr({ typescript: true })],
 };
