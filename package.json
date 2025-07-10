@@ -1,6 +1,6 @@
 {
   "name": "icons",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Apteka.by icons kit",
   "types": "./native/index.d.ts",
   "exports": {
@@ -8,11 +8,13 @@
   },
   "type": "module",
   "scripts": {
-    "build": "rollup --config"
+    "build": "npx @svgr/cli --native --typescript --out-dir build/native -- src/icons && rollup --config"
   },
   "devDependencies": {
     "@rollup/plugin-url": "^8.0.2",
+    "@svgr/cli": "^8.1.0",
     "@svgr/rollup": "^8.1.0",
+    "react-native-svg": "^15.12.0",
     "rollup": "^4.44.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.8.3"
