@@ -1,6 +1,6 @@
 {
   "name": "icons",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Apteka.by icons kit",
   "types": "./native/index.d.ts",
   "exports": {
@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.4",
-    "@rollup/plugin-url": "^8.0.2",
     "@svgr/cli": "^8.1.0",
     "@svgr/rollup": "^8.1.0",
     "@types/react": "^19.1.8",

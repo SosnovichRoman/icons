@@ -1,5 +1,5 @@
-// const fs = require("fs");
-// const path = require("path");
+// Создает в rootDir файл index.ts, который экспортирует все папки из каталога. Имена экспортов идут с большой буквы.
+
 import fs from "fs";
 import path from "path";
 
