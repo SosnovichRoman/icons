@@ -5,7 +5,7 @@ export default {
   output: {
     file: "native/index.js",
     format: "esm",
-    sourcemap: true,
+    // sourcemap: true,
   },
-  plugins: [typescript()],
+  plugins: [typescript({ tsconfig: "./tsconfig.rollup-native.json" })],
 };
