@@ -1,5 +1,5 @@
 {
-  "name": "@icons",
+  "name": "icons",
   "version": "1.0.12",
   "description": "Apteka.by icons kit",
   "types": "./native/index.d.ts",
