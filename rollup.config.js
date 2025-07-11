@@ -1,7 +1,7 @@
 import typescript from "@rollup/plugin-typescript";
 
 export default {
-  input: "src/index.ts",
+  input: "build/native/index.ts",
   output: {
     file: "native/index.js",
     format: "esm",
