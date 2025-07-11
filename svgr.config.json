@@ -1,0 +1,24 @@
+{
+  "native": true,
+  "typescript": true,
+  "outDir": "build/native",
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "preset-default",
+        "params": {
+          "overrides": {
+            "removeViewBox": false
+          }
+        }
+      },
+      {
+        "name": "removeAttrs",
+        "params": {
+          "attrs": "xmlns"
+        }
+      }
+    ]
+  }
+}
