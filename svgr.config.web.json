@@ -1,0 +1,23 @@
+{
+  "typescript": true,
+  "outDir": "build/web",
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "preset-default",
+        "params": {
+          "overrides": {
+            "removeViewBox": false
+          }
+        }
+      },
+      {
+        "name": "removeAttrs",
+        "params": {
+          "attrs": "xmlns"
+        }
+      }
+    ]
+  }
+}

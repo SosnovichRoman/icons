@@ -1,14 +1,27 @@
 {
   "name": "icons",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Apteka.by icons kit",
   "types": "./native/index.d.ts",
   "exports": {
-    "./native": "./native/index.js"
+    "./native": "./native/index.js",
+    "./web": "./web/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "native": [
+        "native/index.d.ts"
+      ],
+      "web": [
+        "web/index.d.ts"
+      ]
+    }
   },
   "type": "module",
   "scripts": {
-    "build": "npx @svgr/cli --config-file ./svgr.config.json -- src/icons && node generate-index.js && rollup --config"
+    "build:native": "npx @svgr/cli --config-file ./svgr.config.native.json -- src/icons && node generate-index.js build/native && rollup --config rollup.config.native.js",
+    "build:web": "npx @svgr/cli --config-file ./svgr.config.web.json -- src/icons && node generate-index.js build/web && rollup --config rollup.config.web.js",
+    "build": "npm run build:native && npm run build:web"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.4",

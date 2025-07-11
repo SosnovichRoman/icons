@@ -1,9 +1,11 @@
-// Создает в rootDir файл index.ts, который экспортирует все папки из каталога. Имена экспортов идут с большой буквы.
+// Создает в rootDir файл index.ts, который экспортирует все папки из указанного каталога. Имена экспортов идут с большой буквы.
+// Пример вызова: node generate-index.js PATH_TO_DIRECTORY
 
 import fs from "fs";
 import path from "path";
 
-const rootDir = "./build/native";
+const rootDir = process.argv[2];
+if (!rootDir) throw new Error("Root directory parameter not specified");
 const indexFilePath = path.join(rootDir, "index.ts");
 
 const directories = fs

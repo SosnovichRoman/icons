@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./native",
+    "outDir": "./web",
     "module": "esnext",
     "target": "esnext", // Целевая версия js
     "lib": [
@@ -20,7 +20,7 @@
     ],
     "jsx": "react",
     "declaration": true,
-    "declarationDir": "./native",
+    "declarationDir": "./web",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -35,16 +35,6 @@
     // Causes issues with package.json "exports"
     "forceConsistentCasingInFileNames": false
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "native/**/*.ts",
-    "native/**/*.tsx",
-    "web/**/*.ts",
-    "web/**/*.tsx",
-    "build/**/*.ts",
-    "build/**/*.tsx",
-    "svgr.d.ts" // svgr.d.ts необходим для того, чтобы typescript мог импортировать svg
-  ],
+  "include": ["build/web/**/*.ts", "build/web/**/*.tsx"],
   "exclude": ["node_modules"]
 }
