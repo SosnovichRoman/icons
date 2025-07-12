@@ -1,6 +1,6 @@
 {
   "name": "icons",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Apteka.by icons kit",
   "types": "./native/index.d.ts",
   "exports": {
@@ -21,16 +21,23 @@
   "scripts": {
     "build:native": "npx @svgr/cli --config-file ./svgr.config.native.json -- src/icons && node generate-index.js build/native && rollup --config rollup.config.native.js",
     "build:web": "npx @svgr/cli --config-file ./svgr.config.web.json -- src/icons && node generate-index.js build/web && rollup --config rollup.config.web.js",
-    "build": "npm run build:native && npm run build:web"
+    "build": "npm run build:native && npm run build:web",
+    "storybook": "npm run generate-storybook && storybook dev -p 6006",
+    "generate-storybook": "node generate-web-stories.js web && node generate-web-stories.js native",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.4",
+    "@storybook/react-native-web-vite": "^9.0.16",
+    "@storybook/react-vite": "^9.0.16",
     "@svgr/cli": "^8.1.0",
     "@svgr/rollup": "^8.1.0",
     "@types/react": "^19.1.8",
     "react": "^19.1.0",
     "react-native-svg": "^15.12.0",
     "rollup": "^4.44.2",
-    "typescript": "^5.8.3"
+    "storybook": "^9.0.16",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4"
   }
 }
