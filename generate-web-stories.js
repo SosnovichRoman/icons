@@ -33,7 +33,7 @@ fs.readdirSync(componentsDir).forEach((componentDir) => {
 import { ${componentName} } from "../../../${componentsDir}/${componentDir}";
 
 const meta: Meta<typeof ${componentName}> = {
- title: "Web/${componentName}",
+ title: "${subDir}/${componentName}",
  parameters: {
   layout: "centered",
  },
