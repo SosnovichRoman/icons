@@ -23,7 +23,7 @@
     "build:web": "npx @svgr/cli --config-file ./svgr.config.web.json -- src/icons && node generate-index.js build/web && rollup --config rollup.config.web.js",
     "build": "npm run build:native && npm run build:web",
     "storybook": "npm run generate-storybook && storybook dev -p 6006",
-    "generate-storybook": "node generate-web-stories.js web && node generate-web-stories.js native",
+    "generate-storybook": "node generate-stories.js web && node generate-stories.js native",
     "build-storybook": "storybook build"
   },
   "devDependencies": {
