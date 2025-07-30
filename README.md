@@ -21,7 +21,7 @@ npm install https://github.com/SosnovichRoman/icons.git
 
 ### Исполняемые файлы
 + generate-index.js - создает в указанной папке файла index.ts, который будет экспортировать все каталоги из указанной директории
-+ generate-index.js - создает в папке stories папку с историями для компонентов из папки build. В качестве аргумента принимает название подкаталога (web, native)
++ generate-stories.js - создает в папке stories папку с историями для компонентов из папки build. В качестве аргумента принимает название подкаталога (web, native)
 
 ### Конфигурационные файлы
 + rollup.config.(native/web).js - файлы конфигурации rollup
